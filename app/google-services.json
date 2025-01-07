@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875056410046",
+    "project_id": "jetpackcomposecart-6d5ba",
+    "storage_bucket": "jetpackcomposecart-6d5ba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875056410046:android:658255c9445ab685461def",
+        "android_client_info": {
+          "package_name": "com.example.shoppingcartcompose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArSehcZgMRDTe7qtLFQWDjgOx8Zfpf04w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
