@@ -76,7 +76,7 @@ class MainActivity : BaseActivity() {
 }
 
 @Composable
-@Preview
+
 fun MainActivityScreen(onCartClick: () -> Unit) {
     val viewModel = MainViewModel()
     val banners = remember {

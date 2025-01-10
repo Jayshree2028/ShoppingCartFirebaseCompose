@@ -4,17 +4,16 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-<<<<<<< HEAD
+
 import com.example.shoppingcartcompose.model.CategoryModel
 import com.example.shoppingcartcompose.model.ItemsModel
-=======
->>>>>>> 25e250283faa4a1b42d23d5a2954e8550b12abf8
+
 import com.example.shoppingcartcompose.model.SliderModel
 import com.google.firebase.database.*
 
 class MainViewModel : ViewModel() {
     private val firebaseDatabase = FirebaseDatabase.getInstance()
-<<<<<<< HEAD
+
     private val _category = MutableLiveData<MutableList<CategoryModel>>()
     private val _banners = MutableLiveData<List<SliderModel>>()
     private val _recommended = MutableLiveData<MutableList<ItemsModel>>()
@@ -67,10 +66,9 @@ class MainViewModel : ViewModel() {
 
         })
     }
-=======
+
     private val _banners = MutableLiveData<List<SliderModel>>()
     val banners: LiveData<List<SliderModel>> = _banners
->>>>>>> 25e250283faa4a1b42d23d5a2954e8550b12abf8
 
     private var bannerListener: ValueEventListener? = null
 
@@ -95,7 +93,7 @@ class MainViewModel : ViewModel() {
         bannerReference.addValueEventListener(bannerListener!!)
     }
 
-<<<<<<< HEAD
+
     fun loadCategory() {
         val Ref = firebaseDatabase.getReference("Category")
         Ref.addValueEventListener(object : ValueEventListener {
@@ -118,8 +116,6 @@ class MainViewModel : ViewModel() {
 
     }
 
-=======
->>>>>>> 25e250283faa4a1b42d23d5a2954e8550b12abf8
     override fun onCleared() {
         super.onCleared()
         bannerListener?.let {
