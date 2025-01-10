@@ -67,8 +67,6 @@ class MainViewModel : ViewModel() {
         })
     }
 
-    private val _banners = MutableLiveData<List<SliderModel>>()
-    val banners: LiveData<List<SliderModel>> = _banners
 
     private var bannerListener: ValueEventListener? = null
 

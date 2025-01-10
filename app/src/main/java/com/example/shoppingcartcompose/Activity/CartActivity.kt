@@ -318,6 +318,7 @@ class CartActivity : BaseActivity() {
                     })
                 Box(modifier = Modifier
                     .padding(2.dp)
+                    .size(28.dp)
                     .background(
                         colorResource(id = R.color.purple),
                         shape = RoundedCornerShape(10.dp)
@@ -383,4 +384,3 @@ class CartActivity : BaseActivity() {
     }
 
 }
-//https://www.youtube.com/watch?v=XOmRT6x20RE

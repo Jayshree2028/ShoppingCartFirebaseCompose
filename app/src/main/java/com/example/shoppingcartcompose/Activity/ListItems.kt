@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -48,7 +49,7 @@ fun ListItems(items: List<ItemsModel>) {
     LazyVerticalGrid(
         columns = GridCells.Fixed(2),
         modifier = Modifier
-            .height(500.dp)
+            .height(400.dp)
             .padding(start = 8.dp, end = 8.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
         horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -99,15 +100,16 @@ fun RecommendedItem(items: List<ItemsModel>, row: Int) {
     Column(
         modifier = Modifier
             .padding(8.dp)
-            .height(225.dp)
+            .fillMaxHeight()
+//            .height(215.dp)
     ) {
         AsyncImage(
             model = items[row].picUrl.firstOrNull(),
             contentDescription = items[row].title,
             modifier = Modifier
-                .width(175.dp)
+                .width(165.dp)
                 .background(colorResource(R.color.lightGrey), shape = RoundedCornerShape(10.dp))
-                .height(175.dp)
+                .height(165.dp)
                 .padding(8.dp)
                 .clickable {
                     val intent = Intent(context, DetailsActivity::class.java).apply {

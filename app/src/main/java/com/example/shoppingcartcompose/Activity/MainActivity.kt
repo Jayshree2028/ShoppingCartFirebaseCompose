@@ -233,9 +233,9 @@ fun MainActivityScreen(onCartClick: () -> Unit) {
                 .constrainAs(bottomMenu) {
                     bottom.linkTo(parent.bottom)
                 },
-        ) {
+            onItemClick = onCartClick
 
-        }
+        )
     }
 
 }

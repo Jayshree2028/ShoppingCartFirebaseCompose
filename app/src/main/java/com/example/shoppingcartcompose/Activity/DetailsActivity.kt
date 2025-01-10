@@ -126,7 +126,7 @@ fun DetailsScreen(
             items(item.picUrl) { imageurl ->
                 ImageThumbnail(imageUrl = imageurl,
                     isSelected = selectedImageUrl == imageurl,
-                    onClick = { selectedImageUrl == imageurl })
+                    onClick = { selectedImageUrl = imageurl })
 
             }
 
