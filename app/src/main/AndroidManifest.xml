@@ -13,6 +13,7 @@
         android:theme="@style/Theme.ShoppingCartCompose"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Activity.CartActivity"
             android:exported="false" />
         <activity
@@ -23,6 +24,9 @@
             android:exported="false" />
         <activity
             android:name=".Activity.IntroActivity"
+=======
+            android:name=".IntroActivity"
+>>>>>>> 25e250283faa4a1b42d23d5a2954e8550b12abf8
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ShoppingCartCompose">
@@ -33,6 +37,7 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".Activity.BaseActivity"
             android:exported="false" />
         <activity
@@ -40,6 +45,17 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ShoppingCartCompose" />
+=======
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ShoppingCartCompose">
+
+        </activity>
+>>>>>>> 25e250283faa4a1b42d23d5a2954e8550b12abf8
     </application>
 
 </manifest>
